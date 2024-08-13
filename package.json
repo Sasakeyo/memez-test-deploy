@@ -3,7 +3,8 @@
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "@nomicfoundation/hardhat-verify": "^2.0.9",
-    "hardhat": "^2.22.7"
+    "hardhat": "^2.22.7",
+    "typescript": "^5.5.4"
   },
   "dependencies": {
     "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
