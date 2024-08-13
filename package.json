@@ -3,14 +3,15 @@
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "@nomicfoundation/hardhat-verify": "^2.0.9",
-    "hardhat": "^2.22.7"
+    "hardhat": "^2.22.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
   },
   "dependencies": {
     "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
     "@openzeppelin/contracts": "^5.0.2",
     "@uniswap/v2-periphery": "^1.1.0-beta.0",
     "dotenv": "^16.4.5",
-    "hardhat-chai-matchers-viem": "^2.0.8",
-    "typescript": "^5.5.4"
+    "hardhat-chai-matchers-viem": "^2.0.8"
   }
 }
