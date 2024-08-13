@@ -2,6 +2,7 @@ const dotenv = require('dotenv');
 const { HardhatUserConfig } = require('hardhat/config');
 require('@nomicfoundation/hardhat-toolbox-viem');
 require('hardhat-chai-matchers-viem');
+require("@nomicfoundation/hardhat-verify");
 
 dotenv.config();
 
@@ -42,6 +43,10 @@ const config = {
       url: 'https://bsc-testnet.public.blastapi.io',
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : undefined,
     },
+    opSepolia: {
+      url: 'https://sepolia.optimism.io',
+      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : undefined,
+    },
 
     mamoz: {
       url: 'https://rpc.mamoz.xyz',
@@ -53,7 +58,11 @@ const config = {
     requiredConfirmations: 1,
   },
   etherscan: {
-    apiKey: process.env.ETHERSCAN_KEY,
+    apiKey: process.env.ETHERSCAN_KEY || "default_api_key",
+    // apiKey: {
+    //   // Is not required by blockscout. Can be any non-empty string
+    //   'opSepolia': "string" // 'network', "default_api_key"
+    // },
     customChains: [
       {
         network: 'fraxtal',
@@ -63,8 +72,28 @@ const config = {
           browserURL: 'https://fraxscan.com',
         },
       },
+      {
+        network: 'opSepolia',
+        chainId: 11155420,
+        urls: {
+          apiURL: 'https://optimism-sepolia.blockscout.com/api',
+          browserURL: 'https://optimism-sepolia.blockscout.com',
+        },
+      },
+
+      {
+        network: 'mamoz',
+        chainId: 7077,
+        urls: {
+          apiURL: 'https://exp.mamoz.xyz/api',
+          browserURL: 'https://exp.mamoz.xyz',
+        },
+      },
     ],
   },
+  sourcify: {
+    enabled: false
+  }
 };
 
 module.exports = config;
