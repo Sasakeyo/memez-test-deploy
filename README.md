@@ -10,8 +10,16 @@ config
 - [edit](https://github.com/Sasakeyo/memez-test-deploy/blob/main/ignition/modules/MockMEMEZ.ts#L4C3-L5C69)
 
 ```
-npx hardhat ignition deploy ./ignition/modules/MockMEMEZ.ts --network {xxx}
+npx hardhat ignition deploy ./ignition/modules/MockMEMEZ.ts --network <xxx>
 ```
+ verify
+```
+npx hardhat verify --network <network> <DEPLOYED_CONTRACT_ADDRESS> 
+```
+*if hgave a "Constructor argument 1"...*
+
+
+<br>
 
 2. ignition\modules\MemezFactory.ts
 config
@@ -19,5 +27,10 @@ config
 - [edit](https://github.com/Sasakeyo/memez-test-deploy/blob/main/ignition/modules/MemezFactory.ts#L4C3-L5C124)
 
 ```
-npx hardhat ignition deploy ./ignition/modules/MemezFactory.ts --network {xxx}
+npx hardhat ignition deploy ./ignition/modules/MemezFactory.ts --network <xxx>
 ```
+ verify
+```
+npx hardhat verify --network <network> <DEPLOYED_CONTRACT_ADDRESS> 
+```
+*if hgave a "Constructor argument 1"...*
