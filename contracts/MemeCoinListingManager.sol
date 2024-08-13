@@ -9,8 +9,8 @@ import "./interfaces/IMemeCoinListingManager.sol";
 import "hardhat/console.sol";
 
 contract MemeCoinListingManager is IMemeCoinListingManager {
-    address constant public fraxswapFactory = 0xbA7D3bc45946C3F27C7b3e360a454c37Ecbd41DF;
-    address constant public fraxswapRouter = 0xa3d26ebad72f86b91b43b3616dac2a6bdde9b2a3;
+    address constant public fraxswapFactory = 0x6725F303b657a9451d8BA641348b6761A6CC7a17;
+    address constant public fraxswapRouter = 0xD99D1c33F9fC3444f8101754aBC46c52416550D1;
     uint256 constant internal DECIMALS = 1e18;
     address internal immutable treasury;
     address internal immutable memez;
