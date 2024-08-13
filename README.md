@@ -16,7 +16,7 @@ npx hardhat ignition deploy ./ignition/modules/MockMEMEZ.ts --network <xxx>
 ```
 npx hardhat verify --network <network> <DEPLOYED_CONTRACT_ADDRESS> 
 ```
-*if hgave a "Constructor argument 1"...*
+*if hgve a "Constructor argument 1"...*
 
 
 <br>
@@ -33,4 +33,4 @@ npx hardhat ignition deploy ./ignition/modules/MemezFactory.ts --network <xxx>
 ```
 npx hardhat verify --network <network> <DEPLOYED_CONTRACT_ADDRESS> 
 ```
-*if hgave a "Constructor argument 1"...*
+*if hgve a "Constructor argument 1"...*
