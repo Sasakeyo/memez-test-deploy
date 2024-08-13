@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "./interfaces/fraxswap/IFraxswapRouter.sol";
 
 contract MockMEMEZ is ERC20 {
-    address constant internal fraxswapRouter = 0xa3d26ebad72f86b91b43b3616dac2a6bdde9b2a3;
+    address constant internal fraxswapRouter = 0xD99D1c33F9fC3444f8101754aBC46c52416550D1;
 
     constructor() ERC20('MAMOZ Token', 'MAMOZ') { }
 
