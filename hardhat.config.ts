@@ -38,19 +38,27 @@ const config = {
     sepolia: {
       url: 'https://eth-sepolia.public.blastapi.io',
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : undefined,
+      gas: 'auto', // gas limit
+      gasPrice: 'auto', // 3 gwei = 3000000000
     },
     bscTestnet: {
       url: 'https://bsc-testnet.public.blastapi.io',
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : undefined,
+      gas: 'auto', // gas limit
+      gasPrice: 'auto', // 3 gwei = 3000000000
     },
     opSepolia: {
       url: 'https://sepolia.optimism.io',
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : undefined,
+      gas: 'auto', // gas limit
+      gasPrice: 'auto', // 3 gwei = 3000000000 
     },
 
     mamoz: {
       url: 'https://rpc.mamoz.xyz',
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : undefined,
+      gas: 'auto', // gas limit
+      gasPrice: 'auto', // 3 gwei = 3000000000
     },
 
   },
